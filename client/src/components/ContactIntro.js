@@ -40,7 +40,7 @@ export default function ContactIntro(props) {
   return (
     <DIV_FULL>
       <h1>
-        <AnimateText>If you’re hiring, let’s talk</AnimateText>
+        <AnimateText>If you’re hiring, let’s talk!</AnimateText>
       </h1>
       <Form />
     </DIV_FULL>

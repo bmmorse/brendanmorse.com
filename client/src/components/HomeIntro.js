@@ -38,6 +38,7 @@ export default function HomeIntro(props) {
           developer.
         </AnimateText>
       </h1>
+
       <Button src='/contact'>Let's Talk</Button>
     </DIV_FULL>
   );
