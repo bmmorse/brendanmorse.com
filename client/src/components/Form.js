@@ -98,7 +98,11 @@ export default function Form() {
   return (
     <DIV_FULL>
       <form action='https://submit-form.com/fTHbNCPd' method='get' id='contact'>
-        <input type='hidden' name='_redirect' value='http://localhost:3000/' />
+        <input
+          type='hidden'
+          name='_redirect'
+          value='https://brendanmorse.com'
+        />
         <div>
           <label htmlFor='name'>Name: </label>
           <input required minLength='2' type='text' id='name' name='name' />
