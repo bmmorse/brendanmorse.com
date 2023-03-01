@@ -1,9 +1,8 @@
 const express = require('express');
 const path = require('path');
 const enforce = require('express-sslify');
-
 const app = express();
-
+require('dotenv').config();
 // always force https in production
 if (process.env.NODE_ENV === 'production') {
   app.use(enforce.HTTPS({ trustProtoHeader: true }));
@@ -11,6 +10,11 @@ if (process.env.NODE_ENV === 'production') {
 
 // static assets
 app.use(express.static(path.join(__dirname, 'client/build')));
+
+// parse incoming requests
+app.use(express.json());
+
+app.use('/api', require('./api/Lingo'));
 
 // Always serve React's index.html
 app.get('*', (req, res) => {

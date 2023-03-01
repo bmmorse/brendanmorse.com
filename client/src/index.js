@@ -5,6 +5,7 @@ import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import { useLocation, useOutlet } from 'react-router-dom';
 import GlobalCSS from './Globals/GlobalCSS';
 import { Home, Contact } from './components/index';
+import Lingo from './components/Lingo/index';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -30,6 +31,13 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     element: <Contact />,
+    nodeRef: createRef(),
+    index: false,
+  },
+  {
+    path: '/lingo',
+    name: 'Lingo',
+    element: <Lingo />,
     nodeRef: createRef(),
     index: false,
   },
