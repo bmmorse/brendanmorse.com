@@ -78,7 +78,7 @@ export default function Lingo() {
   return (
     <DIV_FULL>
       <div className='header'>
-        <a href='https://www.lingoapp.com/109576/s/PgqAx2/?v=0'>
+        <a href='https://www.lingoapp.com/109576/s/PgqAx2/?v=0' target='_blank'>
           Link to Lingo Kit
         </a>
       </div>
